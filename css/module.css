@@ -1,0 +1,145 @@
+/** CSS for header **/
+header {
+  text-align: left;
+  background: #F3AC13;
+  position: relative;
+  top: 0;
+  height: 3.5em;
+}
+
+img[role="logo"] {
+  width: auto;
+  height: 2.25em;
+  margin-top: 0.65em;
+}
+
+nav {
+  float: right;
+  /*overflow: hidden;*/
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #435c6e;
+}
+
+.menu-icon {
+  fill: #435c6e;
+  vertical-align: middle;
+}
+
+.sitenav-button img {
+  vertical-align: middle;
+}
+
+
+/** For topnav items **/
+.sitenav {
+  display: inline-block;
+  padding-left: 0.95em;
+  padding-top: 0.95em;
+}
+
+/** For dropdown sitenav bar **/
+.sitenav-list {
+  width: 18.75em;
+  position: absolute;
+  top: 2.8em;
+  right: 0;
+  background: rgba(67, 92, 110, 0.9); /* hex#435c6e with 0.9 opacity*/
+  display: none;
+  padding: 1.25em;
+}
+
+.sitenav-listitem {
+  padding: 0.95em 0.625em;
+  border-top: 1px solid #FFFFFF;
+  cursor: pointer;
+}
+
+.sitenav-listitem:last-child {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.sitenav-listitem a {
+  color: #FFFFFF;
+}
+
+
+/*** Set the width for responsive design ***/
+.col-12 {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+}
+
+/** Set style for hero **/
+.hero {
+  width: 100%;
+  height: 20em;
+  padding-top: 4em;
+}
+
+.hero p {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+button {
+  transition: background .2s, color .2s;
+}
+
+.hero button {
+  margin: 3em 1em 1em 1em;
+  background-color: #EF695F;
+  border: none;
+  outline: none;
+  padding: 1em;
+  border-radius: 5px;
+  width: 12em;
+}
+
+.buttonwrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.summary {
+  background: #435C6E;
+  padding: 3em;
+}
+
+.summary h3 {
+  margin-bottom: 0.5em;
+}
+
+.summaryitem {
+  display: inline-block;
+  width: 25%;
+  margin: 1em;
+}
+
+@media (max-width: 768px) {
+  .sitenav:nth-child(1){
+    display:none;
+  }
+  .hero button {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .hero button:last-child {
+    margin-top: 0;
+  }
+  .hero {
+    margin-bottom: 1em;
+  }
+  .summaryitem {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+
